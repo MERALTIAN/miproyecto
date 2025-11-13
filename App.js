@@ -4,7 +4,6 @@ import { View } from "react-native";
 import { auth } from "./src/database/firebaseconfig";
 import Login from "./src/views/Login";
 import Productos from "./src/views/Productos";
-import CalculadoraIMC from "./src/views/Calcular";
 
 
 export default function App() {
@@ -31,7 +30,6 @@ export default function App() {
   return (
     <View style={{ flex: 1 }}>
       <Productos cerrarSesion={cerrarSesion}/>
-      <CalculadoraIMC cerrarSesion={cerrarSesion}/>
     </View>
   );
 }
